@@ -1,0 +1,6 @@
+### register for account
+POST http://localhost:4000/api/auth/register
+
+
+### login for account
+POST http://localhost:4000/api/auth/login

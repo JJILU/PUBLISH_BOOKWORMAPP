@@ -1,0 +1,62 @@
+### REGISTER ACCOUNT
+POST http://localhost:4000/api/auth/register
+Content-Type: application/json
+
+{
+   "username":"naomi",
+   "email":"naomi@gmail.com",
+   "password":"123456"
+}
+
+
+
+### LOGIN ACCOUNT
+POST http://localhost:4000/api/auth/login
+Content-Type: application/json
+
+{
+   "email":"naomi@gmail.com",
+   "password":"123456"
+}
+
+
+
+### GET ALL USERS
+GET http://localhost:4000/api/users
+Authorization: Bearer YOUR_TOKEN_HERE
+
+
+
+### GET SINGLE USER
+GET http://localhost:4000/api/users/1
+Authorization: Bearer YOUR_TOKEN_HERE
+
+
+
+### CREATE USER
+POST http://localhost:4000/api/users
+Content-Type: application/json
+Authorization: Bearer YOUR_TOKEN_HERE
+
+{
+   "name":"John",
+   "email":"john@gmail.com"
+}
+
+
+
+### UPDATE USER
+PUT http://localhost:4000/api/users/1
+Content-Type: application/json
+Authorization: Bearer YOUR_TOKEN_HERE
+
+{
+   "name":"Updated John",
+   "email":"updated@gmail.com"
+}
+
+
+
+### DELETE USER
+DELETE http://localhost:4000/api/users/1
+Authorization: Bearer YOUR_TOKEN_HERE
